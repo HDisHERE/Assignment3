@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Alex Morgan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+  <div class="container">
+    <div id="nav-content" class="nav-content"></div>
+  </div>
+</nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Page Header -->
+            <section class="page-header">
+                <div class="container">
+                    <h1 class="page-title"><span class="highlight">My</span> Projects</h1>
+                    <p class="page-subtitle">Explore my portfolio of web applications and creative solutions</p>
+                </div>
+            </section>
+
+            <!-- Search Bar -->
+            <section class="search-section">
+                <div class="container-small">
+                    <form id="searchForm" action="projects.html" method="GET">
+                        <input id="projectSearch" name="q" class="search-input" placeholder="Search projects..." />
+                            <button type="submit">Search</button>
+                        </form>
+                </div>
+            </section>
+
+            <div class="category-filters" id="category-filters">
+                <button class="category-btn" data-category="All">All</button>
+                <button class="category-btn" data-category="Finance">Finance</button>
+                <button class="category-btn" data-category="Life">Life</button>
+                <button class="category-btn" data-category="Development">Development</button>
+            </div>
+            <h2 class="section-title">Featured Projects (9)</h2>
+
+            <!-- Projects Section -->
+            <section class="projects-section">
+                <div class="container">
+                    
+                    <div class="projects-grid" id="projects-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quote-section">
+                <div class ="container">
+                <div class="quote-card">
+                    <p id="quoteText" class="quote-text">Click to get a random quote!</p>
+                    <p id="quoteAuthor" class="quote-author"></p>
+                    <button id="quoteBtn" class="btn btn-primary btn-small">Random Quote</button>
+                </div>
+                </div>
+            </section>
+        </main>
+
+        <button id="backToTop" aria-label="Back to top">↑</button>
+
+        <footer id="contact" class="footer">
+  <div id="footer-content"></div>
+</footer>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>
